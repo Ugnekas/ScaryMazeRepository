@@ -265,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 147509266}
   - component: {fileID: 147509265}
+  - component: {fileID: 147509267}
   m_Layer: 0
   m_Name: JumpScareTrigger
   m_TagString: Untagged
@@ -332,6 +333,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &147509267
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147509264}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 92bad756a67c38d42b7ba90c93195e2d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &208940455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6421652207122967668, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
@@ -1558,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.62
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1659,7 +1756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.62
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1902,7 +1999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.83
+      value: -1.88
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2316,7 +2413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.62
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 1291672895016568757, guid: a7fb30fb88f56c140b6a9ae048db010a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2400,6 +2497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 50
   JumpScareImage: {fileID: 1598457222}
+  jumpScareSound: {fileID: 0}
 --- !u!212 &1568161216
 SpriteRenderer:
   m_ObjectHideFlags: 0

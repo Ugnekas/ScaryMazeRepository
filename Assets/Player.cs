@@ -8,10 +8,13 @@ public class Player : MonoBehaviour
 
     public GameObject JumpScareImage;
 
+    public AudioSource jumpScareSound;
+
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
+        jumpScareSound = GetComponent<AudioSource>();
         
     }
 
@@ -42,7 +45,7 @@ public class Player : MonoBehaviour
         {
             JumpScareImage.SetActive(true);
             Time.timeScale = 0;
-
+            jumpScareSound.Play();
         }
     }
 }
